@@ -1,0 +1,147 @@
+
+body {
+    background-color: #e5d8af !important;
+}
+
+:root {
+    --primary-color: #16416b;
+    --secondary-color: #1d4967;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --section-bg: #ffffff;
+    --accent-color: #1d4967;;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: var(--section-bg);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    background-color: #395a8296;
+    border-radius: 8px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #16416b;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #40475c;
+    color: white;
+}
