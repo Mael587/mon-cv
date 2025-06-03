@@ -102,6 +102,7 @@ nav {
 }
 
 .nav {
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +153,8 @@ nav {
         align-items: center;
         gap: 10px;
         padding: 10px;
+        max-width: 100%;
+        overflow-x: auto;
     }
 
     .nav li {
@@ -167,11 +170,11 @@ nav {
 @media (max-width: 480px) {
     body {
         padding: 10px;
-        padding-top: 80px;
+        padding-top: 60px; /* Important pour éviter que la nav cache le haut */
     }
 
     .container {
-        padding: 15px;
+        padding: 20px;
     }
 
     header h1 {
@@ -200,4 +203,3 @@ html {
  margin-left: auto;
  margin-right: auto;
  transition: background-color 0.3s;
-
