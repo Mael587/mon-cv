@@ -70,7 +70,7 @@ h2 {
     padding-left: 10px;
     margin-bottom: 15px;
 }
-
+z
 ul {
     list-style-type: disc;
     padding-left: 20px;
@@ -144,4 +144,58 @@ html {
 .nav li a:hover {
     background-color: #40475c;
     color: white;
+}
+.tel-link {
+  color: blue;
+  text-decoration: underline;
+}
+.mail-link {
+  color: blue;
+  text-decoration: underline;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  background-color: white;
+  z-index: 800;
+  box-shadow: 0 2px 5px rgba(132, 80, 80, 0.1);
+  padding: 10px 0;
+}
+
+
+
+ul.nav {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav li {
+  margin: 0 15px;
+}
+
+ul.nav a {
+  text-decoration: none;
+  color: #1e11ac;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
