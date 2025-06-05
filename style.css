@@ -102,8 +102,9 @@ strong {
 .burger {
     display: none;
     font-size: 28px;
-    color: var(--primary-color);
+    color: #010000;
     cursor: pointer;
+    z-index: 1001;
 }
 
 .navbar {
@@ -111,7 +112,7 @@ strong {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(251, 241, 241);
+    background-color: rgb(12, 20, 131);
     padding: 12px 24px;
     position: fixed;
     width: 100%;
@@ -122,7 +123,7 @@ strong {
 }
 
 .navbar .logo {
-    color: var(--primary-color);
+    color: #0112ff;
     font-size: 22px;
     font-weight: bold;
 }
@@ -131,13 +132,13 @@ strong {
     list-style: none;
     display: flex;
     gap: 18px;
-    background-color: rgba(31, 41, 55, 0.6);
+    background-color: rgba(3, 32, 74, 0.6);
     border-radius: var(--radius);
     padding: 10px 20px;
 }
 
 .nav-links li a {
-    color: var(--primary-color);
+    color: #e7d1c6;
     font-weight: bold;
     border-radius: 8%;
     padding: 6px 10px;
@@ -146,7 +147,7 @@ strong {
 
 .nav-links li a:hover {
     background-color: var(--secondary-color);
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Responsive */
@@ -158,13 +159,16 @@ strong {
     .nav-links {
         display: none;
         flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 15px;
         background-color: rgba(31, 41, 55, 0.95);
         position: absolute;
         top: 60px;
         right: 10px;
         width: 220px;
-        padding: 15px;
         border-radius: var(--radius);
+        z-index: 999;
     }
 
     .menu-toggle:checked + .burger + .nav-links {
@@ -188,18 +192,8 @@ strong {
 
 @media (max-width: 600px) {
     .nav-links {
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 12px;
         width: 100%;
-        position: absolute;
-        top: 60px;
         right: 0;
-        background-color: rgba(31, 41, 55, 0.95);
-        border-radius: var(--radius);
-        z-index: 999;
     }
 
     .nav-links li {
@@ -211,7 +205,6 @@ strong {
         text-align: center;
     }
 }
-
 
 @media (max-width: 480px) {
     body {
